@@ -202,7 +202,7 @@ class httpMethod {
 		  `节点ISP：${info.isp}\n` +
 		  `节点位置：${getFlagEmoji(info.countryCode)}${info.country} - ${info.city}`,
 		icon: getSSID() ? 'wifi' : 'simcard',
-		'icon-color': getSSID() ? '#005CAF' : '#F9BF45',
+		'icon-color': getSSID() ? '#007aff' : '#007aff',
 	  });
 	}).catch(error => {
 	  // 网络切换
@@ -226,7 +226,7 @@ class httpMethod {
 		  title: '发生错误',
 		  content: '无法获取当前网络信息\n请检查网络状态后重试',
 		  icon: 'wifi.exclamationmark',
-		  'icon-color': '#CB1B45',
+		  'icon-color': '#007aff',
 		});
 	  }
 	});
@@ -250,7 +250,7 @@ class httpMethod {
 		title: "请求超时",
 		content: "连接请求超时\n请检查网络状态后重试",
 		icon: 'wifi.exclamationmark',
-		'icon-color': '#CB1B45',
+		'icon-color': '#007aff',
 	  });
 	}, scriptTimeout > surgeMaxTimeout ? surgeMaxTimeout : scriptTimeout);
 

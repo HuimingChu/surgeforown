@@ -194,7 +194,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
         `节点ISP：${info.isp}\n` +
         `节点位置：${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city}`,
       icon: getSSID() ? 'wifi' : 'simcard',
-      'icon-color': getSSID() ? '#007AFF' : '#8AB8DD',
+      'icon-color': getSSID() ? '#007AFF' : '#007AFF',
     });
   }).catch(error => {
     // 网络切换

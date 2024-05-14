@@ -218,7 +218,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
         title: '发生错误',
         content: '无法获取当前网络信息\n请检查网络状态后重试',
         icon: 'wifi.exclamationmark',
-        'icon-color': '#CB1B45',
+        'icon-color': '#007AFF',
       });
     }
   });
@@ -242,7 +242,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
       title: "请求超时",
       content: "连接请求超时\n请检查网络状态后重试",
       icon: 'wifi.exclamationmark',
-      'icon-color': '#CB1B45',
+      'icon-color': '#007AFF',
     });
   }, scriptTimeout > surgeMaxTimeout ? surgeMaxTimeout : scriptTimeout);
 

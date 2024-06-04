@@ -30,5 +30,6 @@ $httpAPI("GET", "/v1/requests/recent", null, (body) => {
 		title: "Rule Matching Time",
 		content: `统计数量: ${history.numberOfRequests}\n平均时间: ${avgMatchingTime} ms`,
 		icon: "bolt.horizontal.circle.fill",
+		'icon-color': '#f48220',
 	});
 });

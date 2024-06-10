@@ -1,3 +1,11 @@
+/*
+ * 由@smartmimi编写
+ * 原脚本地址：https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
+ * 由@Rabbit-Spec修改
+ * 更新日期：2022.06.22
+ * 版本：1.0
+*/
+
 var tlist = {
   1: ["中秋", "2022-09-10"],
   2: ["国庆", "2022-10-01"],
@@ -15,6 +23,7 @@ var tlist = {
 let tnow = new Date();
 let tnowf =
   tnow.getFullYear() + "-" + (tnow.getMonth() + 1) + "-" + tnow.getDate();
+
 /* 计算2个日期相差的天数，不包含今天，如：2016-12-13到2016-12-15，相差2天
  * @param startDateString
  * @param endDateString

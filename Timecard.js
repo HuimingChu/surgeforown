@@ -15,7 +15,6 @@ var tlist = {
 let tnow = new Date();
 let tnowf =
   tnow.getFullYear() + "-" + (tnow.getMonth() + 1) + "-" + tnow.getDate();
-
 /* 计算2个日期相差的天数，不包含今天，如：2016-12-13到2016-12-15，相差2天
  * @param startDateString
  * @param endDateString

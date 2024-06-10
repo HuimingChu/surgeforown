@@ -28,7 +28,7 @@ let args = getArgs();
     title: `${args.title} | ${hour}:${minutes}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.circle",
-    "icon-color": args.color || "#f48220",
+    "icon-color": args.color || "#007aff",
   });
 })();
 

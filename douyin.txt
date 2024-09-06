@@ -23,3 +23,5 @@ DOMAIN-SUFFIX,ecombdimg.com
 DOMAIN-SUFFIX,byteeffecttos.com
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,render.ecombdpage.com
+DOMAIN-SUFFIX,api5-hl.qishui.com
+DOMAIN-SUFFIX,m.baike.com

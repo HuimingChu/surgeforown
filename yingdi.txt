@@ -29,5 +29,5 @@ DOMAIN-SUFFIX,smoba.qq.com
 DOMAIN-SUFFIX,pingtas.qq.com
 DOMAIN-SUFFIX,qlog.cn
 DOMAIN-SUFFIX,beacon.cdn.qq.com
-IP-CIDR,101.32.104.4/32
-IP-CIDR,43.129.2.94/32
+IP-CIDR,101.32.104.4/32,no-resolve
+IP-CIDR,43.129.2.94/32,no-resolve

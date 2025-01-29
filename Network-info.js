@@ -69,11 +69,6 @@ function randomString(e = 6) {
 }
 
 function getFlagEmoji(countryCode) {
-
-if (countryCode.toUpperCase() == 'TW') {
-    countryCode = 'CN'
-  }
-
   const codePoints = countryCode
     .toUpperCase()
     .split('')
@@ -149,7 +144,7 @@ function getCellularInfo() {
     if ($network.wifi?.ssid == null && radio) {
       cellularInfo = carrierNames[carrierId] ?
         `${carrierNames[carrierId]} | ${radioGeneration[radio]} - ${radio} ` :
-        `蜂窝数据 | ${radioGeneration[radio]} - ${radio}`;
+        `蜂窝数据| ${radioGeneration[radio]} - ${radio}`;
     }
   }
   return cellularInfo;
@@ -194,7 +189,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
         `节点ISP：${info.isp}\n` +
         `节点位置：${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city}`,
       icon: getSSID() ? 'wifi' : 'simcard',
-      'icon-color': getSSID() ? '#007aff' : '#007aff',
+      'icon-color': getSSID() ? '#007AFF' : '#007AFF',
     });
   }).catch(error => {
     // 网络切换
@@ -218,7 +213,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
         title: '发生错误',
         content: '无法获取当前网络信息\n请检查网络状态后重试',
         icon: 'wifi.exclamationmark',
-        'icon-color': '#007aff',
+        'icon-color': '#007AFF',
       });
     }
   });
@@ -242,7 +237,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
       title: "请求超时",
       content: "连接请求超时\n请检查网络状态后重试",
       icon: 'wifi.exclamationmark',
-      'icon-color': '#007aff',
+      'icon-color': '#007AFF',
     });
   }, scriptTimeout > surgeMaxTimeout ? surgeMaxTimeout : scriptTimeout);
 
